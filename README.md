@@ -12,9 +12,8 @@
 
 ## Requirements
 
-- **Programming Language:** Python
+- **Programming Language:** Python 3.9
 - **Framework:** Flask
-- **Additional Modules:** (List any additional modules or libraries if required)
 
 ## Main Features
 
