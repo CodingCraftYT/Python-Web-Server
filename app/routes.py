@@ -4,7 +4,7 @@ from app import app
 
 # Dummy user data (for testing purposes)
 USERS = {
-    'codingcraft': '123'
+    'dummy_username': 'your_password'
 }
 
 # Define a route for the home page ('/' URL)
