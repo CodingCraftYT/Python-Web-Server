@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Server page</title>
+    <style>
+        /* CSS styles for the page layout and design */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn,
+        .signup-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover,
+        .signup-btn:hover {
+            background-color: #45a049;
+        }
+
+        .signup-text {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-link {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-title">Login Server Page</div>
+        <form method="POST" action="/" onsubmit="updateTitle()">
+            <div class="input-group">
+                <input type="text" placeholder="Username" name="username" required autocomplete="off">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" name="password" required autocomplete="off">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <!-- JavaScript function to update the page title with the username -->
+        <script>
+            function updateTitle() {
+                document.title = "Welcome, " + document.getElementsByName("username")[0].value + "!";
+            }
+        </script>
+    </div>
+</body>
+</html>
